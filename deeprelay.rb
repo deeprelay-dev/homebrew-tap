@@ -5,21 +5,21 @@
 class Deeprelay < Formula
   desc "deeprelay command-line interface — OpenAI-compatible serverless inference from your terminal."
   homepage "https://deeprelay.ai"
-  version "3.1.4"
+  version "3.1.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/deeprelay-dev/deeprelay-cli/releases/download/v3.1.4/deeprelay_3.1.4_darwin_amd64.tar.gz"
-      sha256 "675ff774ac352ccac6eaddd1c1dafb5086714da3c9f0d9e22c4953ebfed4a155"
+      url "https://github.com/deeprelay-dev/deeprelay-cli/releases/download/v3.1.5/deeprelay_3.1.5_darwin_amd64.tar.gz"
+      sha256 "7c1e2cb641020af7a5f31dd5eca03d22c34070d89e5a671820fdbb8351744407"
 
       define_method(:install) do
         bin.install "deeprelay"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/deeprelay-dev/deeprelay-cli/releases/download/v3.1.4/deeprelay_3.1.4_darwin_arm64.tar.gz"
-      sha256 "56f96273aa1a8df10107a1001e910552f45c3e63aad2e369fe05190cc0ae5633"
+      url "https://github.com/deeprelay-dev/deeprelay-cli/releases/download/v3.1.5/deeprelay_3.1.5_darwin_arm64.tar.gz"
+      sha256 "8fb2ee5471f6182c5695e00ade993d38a339eb5de56b129a7af3876cc4303d16"
 
       define_method(:install) do
         bin.install "deeprelay"
@@ -29,15 +29,15 @@ class Deeprelay < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deeprelay-dev/deeprelay-cli/releases/download/v3.1.4/deeprelay_3.1.4_linux_amd64.tar.gz"
-      sha256 "15c3655123f1b5d94e603b481ec5df63ffb6a2b8d91825ba1bd72b8612b7813f"
+      url "https://github.com/deeprelay-dev/deeprelay-cli/releases/download/v3.1.5/deeprelay_3.1.5_linux_amd64.tar.gz"
+      sha256 "7f84b704aa84904f8ae2ef8a0e546d4e0e209fdea2df1cc81a449a8ce50d9932"
       define_method(:install) do
         bin.install "deeprelay"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deeprelay-dev/deeprelay-cli/releases/download/v3.1.4/deeprelay_3.1.4_linux_arm64.tar.gz"
-      sha256 "aec624c150cc39e58b70c9590247ef924b8b5e6298df00a8497ed57a345a0101"
+      url "https://github.com/deeprelay-dev/deeprelay-cli/releases/download/v3.1.5/deeprelay_3.1.5_linux_arm64.tar.gz"
+      sha256 "dec25bbe6aad6a3e03a0e70880d04861aa88a762fbdfc31f1e5b324378661acc"
       define_method(:install) do
         bin.install "deeprelay"
       end
